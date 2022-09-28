@@ -43,7 +43,7 @@ const onCategoryChange = (e) => {
       <div className="container">
         <div className="col-12">
           <div className="text-center heading py-2">
-            {/* {id ? "Update Event" : "Create Event"} */}
+            Creat Event
           </div>
         </div>
         <div className="row h-100 justify-content-center align-items-center">
@@ -95,7 +95,7 @@ const onCategoryChange = (e) => {
                   className="btn btn-add"
                   type="submit"
                 >
-                  {/* {id ? "Update" : "Submit"} */}
+                  Submit
                 </button>
               </div>
               </form>
