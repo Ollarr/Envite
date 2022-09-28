@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "@pathofdev/react-tag-input/build/index.css";
+// import "@pathofdev/react-tag-input/build/index.css";
 import { useNavigate, } from "react-router-dom";
 
 
@@ -15,7 +15,7 @@ const categoryOption = [
   "Business",
 ];
 
-const Create = ({ user, setActive }) => {
+const Create = () => {
   const [form, setForm] = useState(initialState);
 
 
@@ -23,21 +23,12 @@ const Create = ({ user, setActive }) => {
 
   const { title, category, description } = form;
 
-  
-
-   
-
-  
-
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
  
-
-  
-
-  const onCategoryChange = (e) => {
+const onCategoryChange = (e) => {
     setForm({ ...form, category: e.target.value });
   };
 
@@ -52,7 +43,7 @@ const Create = ({ user, setActive }) => {
       <div className="container">
         <div className="col-12">
           <div className="text-center heading py-2">
-            {id ? "Update Event" : "Create Event"}
+            {/* {id ? "Update Event" : "Create Event"} */}
           </div>
         </div>
         <div className="row h-100 justify-content-center align-items-center">
@@ -104,7 +95,7 @@ const Create = ({ user, setActive }) => {
                   className="btn btn-add"
                   type="submit"
                 >
-                  {id ? "Update" : "Submit"}
+                  {/* {id ? "Update" : "Submit"} */}
                 </button>
               </div>
               </form>
@@ -114,3 +105,5 @@ const Create = ({ user, setActive }) => {
               </div>
   )
                   }
+
+export default Create
