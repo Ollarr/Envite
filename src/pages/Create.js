@@ -5,7 +5,7 @@ import { useNavigate, } from "react-router-dom";
 const initialState = {
   title: "",
   category: "",
-  description: "",
+  details: "",
 };
 
 const categoryOption = [
@@ -20,7 +20,7 @@ const Create = () => {
 
   const navigate = useNavigate();
 
-  const { title, category, description } = form;
+  const { title, category, details } = form;
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -42,7 +42,7 @@ const onCategoryChange = (e) => {
       <div className="container">
         <div className="col-12">
           <div className="text-center heading py-2">
-            Creat Event
+            Create Event
           </div>
         </div>
         <div className="row h-100 justify-content-center align-items-center">
@@ -76,27 +76,23 @@ const onCategoryChange = (e) => {
               </div>
               <div className="col-12 py-3">
                 <textarea
-                  className="form-control description-box"
-                  placeholder="Description"
-                  value={description}
-                  name="description"
+                  className="form-control"
+                  placeholder="Details"
+                  value={details}
+                  name="details"
                   onChange={handleChange}
                 />
               </div>
-              <div className="mb-3">
-                <input
-                  type="file"
-                  className="form-control"
-                />
-              </div>
+              
               <div className="col-12 py-3 text-center">
                 <button
                   className="btn btn-add"
                   type="submit"
+                  style={{'backgroundImage': 'linear-gradient(#8456EC, #E87BF8)','padding': '16px', 'borderRadius':'10px', 'color':'#FFFFFF'}}
                 >
                   Submit
                 </button>
-                <button onClick={() => navigate(-1)}>Go back</button>
+                <button onClick={() => navigate(-1)} style={{'backgroundImage': 'linear-gradient(#8456EC, #E87BF8)','padding': '16px', 'borderRadius':'10px', 'color':'#FFFFFF', 'marginLeft': '8px'}}>Go back</button>
 
               </div>
               </form>

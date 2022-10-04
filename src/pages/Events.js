@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import eventImage from '../assets/Event-image.png'
 
-export default function events() {
+export default function Events() {
+  const navigate = useNavigate();
   return (
 <section className="hero-section items-center">
     <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -40,6 +42,8 @@ export default function events() {
         Suburb, State, Postcode
       </p>
     </div>
+    <button onClick={() => navigate('/')} style={{'backgroundImage': 'linear-gradient(#8456EC, #E87BF8)','padding': '16px', 'borderRadius':'10px', 'color':'#FFFFFF', 'marginLeft': '8px'}}>Go back</button>
+
   </div>
 
 </div>
