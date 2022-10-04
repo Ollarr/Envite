@@ -10,10 +10,8 @@ export default function Home() {
             <img src={heroImage} alt=""/>
         </div>
         <div className=" lg:col-span-7 sm:order-first" >
-            <h1 style={{'color':'#240D57'}}className="max-w-2xl mb-4 text-[64px] font-extrabold tracking-tight leading-none  xl:text-[64px] dark:text-white">Imagine if <span style={{  'background': 'linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%)', 'backgroundSize': '100%',
-    'backgroundClip': 'text',
-    'textFillColor': 'transparent',
-    }}>snatchat</span> had events.</h1>
+            <h1 style={{'color':'#240D57'}}className="max-w-2xl mb-4 text-[64px] font-extrabold tracking-tight leading-none  xl:text-[64px] dark:text-white">Imagine if <span className='gradient' 
+    >snatchat</span> had events.</h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Easily host and share events with your friends across any social media..</p>
            <button onClick={() => navigate('create')} style={{'backgroundImage': 'linear-gradient(#8456EC, #E87BF8)','padding': '16px', 'borderRadius':'10px', 'color':'#FFFFFF'}}>create an event</button>
            <button onClick={() => navigate('/events')} style={{'backgroundImage': 'linear-gradient(#8456EC, #E87BF8)','padding': '16px', 'borderRadius':'10px', 'color':'#FFFFFF', 'marginLeft': '8px'}}>View events</button>
