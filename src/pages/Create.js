@@ -41,7 +41,7 @@ const onCategoryChange = (e) => {
     <div className="container-fluid mb-4">
       <div className="d-flex align-items-center">
         <div className="col-12">
-          <div className="text-center heading py-2">
+          <div className="text-center heading py-2 display-2">
             Create Event
           </div>
         </div>
@@ -74,7 +74,7 @@ const onCategoryChange = (e) => {
                   ))}
                 </select>
               </div>
-              <div className="col-12 py-3">
+              <div className="col-12 py-3 text-center" row='3' >
                 <textarea
                   className="form-control"
                   placeholder="Details"
@@ -84,7 +84,7 @@ const onCategoryChange = (e) => {
                 />
               </div>
               
-              <div className="col-12 py-3 text-center">
+              <div className="col-12 py-3 text-center" >
                 <button
                   className="btn btn-add"
                   type="submit"

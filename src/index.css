@@ -21,3 +21,10 @@ code {
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
 }
+
+@media only screen and (max-width: 425px){
+.hero-container{
+display: flex;
+flex-direction: column-reverse;
+}
+}
