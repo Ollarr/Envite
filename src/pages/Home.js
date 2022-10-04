@@ -6,7 +6,7 @@ export default function Home() {
   return (
 <section className="hero-section">
     <div className="hero-container items-center justify-items-center grid w-full px-4 py-8 mx-auto lg:gap-8 lg:grid-cols-12">
-    <div className="lg:mt-0 lg:col-span-5 order:none lg:order-first md:order-last">
+    <div className="lg:mt-0 lg:col-span-5  lg:order-first ">
             <img src={heroImage} alt=""/>
         </div>
         <div className=" lg:col-span-7" >
