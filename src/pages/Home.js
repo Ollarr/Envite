@@ -6,10 +6,10 @@ export default function Home() {
   return (
 <section className="hero-section">
     <div className="items-center justify-items-center grid w-full px-4 py-8 mx-auto lg:gap-8 lg:grid-cols-12">
-    <div className="lg:mt-0 lg:col-span-5 lg:order-first md:order-last sm:order-last">
+    <div className="lg:mt-0 lg:col-span-5 lg:order-first md:order-last">
             <img src={heroImage} alt=""/>
         </div>
-        <div className=" lg:col-span-7">
+        <div className=" lg:col-span-7 sm:order-first" >
             <h1 style={{'color':'#240D57'}}className="max-w-2xl mb-4 text-[64px] font-extrabold tracking-tight leading-none  xl:text-[64px] dark:text-white">Imagine if <span style={{  'background': 'linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%)', 'backgroundSize': '100%',
     'backgroundClip': 'text',
     'textFillColor': 'transparent',

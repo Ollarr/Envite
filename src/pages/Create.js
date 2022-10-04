@@ -39,7 +39,7 @@ const onCategoryChange = (e) => {
 
   return (
     <div className="container-fluid mb-4">
-      <div className="container">
+      <div className="d-flex align-items-center">
         <div className="col-12">
           <div className="text-center heading py-2">
             Create Event
@@ -51,7 +51,7 @@ const onCategoryChange = (e) => {
               <div className="col-12 py-3">
                 <input
                   type="text"
-                  className="form-control input-text-box"
+                  className="form-control p-4 rounded input-text-box"
                   placeholder="Title"
                   name="title"
                   value={title}
@@ -64,7 +64,7 @@ const onCategoryChange = (e) => {
                 <select
                   value={category}
                   onChange={onCategoryChange}
-                  className="catg-dropdown"
+                  className="p-4 catg-dropdown"
                 >
                   <option>Please select category</option>
                   {categoryOption.map((option, index) => (
