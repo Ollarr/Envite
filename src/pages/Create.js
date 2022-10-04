@@ -96,6 +96,8 @@ const onCategoryChange = (e) => {
                 >
                   Submit
                 </button>
+                <button onClick={() => navigate(-1)}>Go back</button>
+
               </div>
               </form>
               </div>
