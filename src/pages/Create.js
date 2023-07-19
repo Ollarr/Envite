@@ -98,7 +98,7 @@ const Create = () => {
         {events.length > 0 && (
           <section className="mx-auto">
             <h2 className="text-2xl font-bold mb-4">Added Events:</h2>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap justify-center gap-x-4">
               {events.map((event, index) => (
                 <div key={index} className="w-52 border-2 p-4 mb-4">
                   <h3 className="text-lg font-bold">{event.title}</h3>
